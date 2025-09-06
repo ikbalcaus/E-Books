@@ -135,7 +135,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       } catch (ex) {
         setState(() {
           _fieldErrors = {
-            "general": ["An error occurred. Please try again."],
+            "general": ["An error occurred. Please try again"],
           };
         });
       }

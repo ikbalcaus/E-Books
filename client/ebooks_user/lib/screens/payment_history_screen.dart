@@ -65,7 +65,7 @@ class _PaymentHistoryScreenState extends State<PaymentHistoryScreen> {
     } else {
       content = _buildResultView();
     }
-    return MasterScreen(child: content);
+    return MasterScreen(showBackButton: true, child: content);
   }
 
   Future _fetchPurchases({bool append = false}) async {

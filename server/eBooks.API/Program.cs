@@ -102,6 +102,8 @@ using (var scope = app.Services.CreateScope())
     DbSeeder.SeedLanguages(context);
     if (System.IO.File.Exists(Path.Combine(AppContext.BaseDirectory, "ml-model.zip")))
         await recommenderService.LoadModel();
+    else
+        await recommenderService.TrainModel();
 }
 
 if (app.Environment.IsDevelopment())
