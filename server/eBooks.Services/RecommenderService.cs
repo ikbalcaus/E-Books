@@ -17,7 +17,7 @@ namespace eBooks.Services
         protected SemaphoreSlim _lock = new(1, 1);
         protected MLContext _mlContext = null!;
         protected ITransformer _model = null!;
-        protected string ModelFilePath = "ml-model.zip";
+        protected string ModelFilePath = Path.Combine(AppContext.BaseDirectory, "ml-model.zip");
         protected ILogger<RecommenderService> _logger;
 
         public RecommenderService(EBooksContext db, IMapper mapper, ILogger<RecommenderService> logger)

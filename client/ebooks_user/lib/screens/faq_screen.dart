@@ -25,7 +25,51 @@ class _FaqScreenState extends State<FaqScreen> {
     {
       "question": "Can I read books offline?",
       "answer":
-          "Yes, once purchased, books are available offline in your library.",
+          "Currently no, but we are planning to add offline reading in the future.",
+    },
+    {
+      "question": "How do I change my password?",
+      "answer": "Go to your profile, click on \"Edit profile\" and change it.",
+    },
+    {
+      "question": "Can I get a refund for a book?",
+      "answer":
+          "Refunds are available within 7 days of purchase if the book has not been downloaded.",
+    },
+    {
+      "question": "How do I contact support?",
+      "answer":
+          "You can contact support using the \"Help and Support\" section in your profile or send a question through the FAQ page.",
+    },
+    {
+      "question": "How do I follow a publisher?",
+      "answer":
+          "Visit the publisher's page and click the \"Follow\" button to get updates on their new books.",
+    },
+    {
+      "question": "How do I add books to my wishlist?",
+      "answer":
+          "Click on the three dots icons, and then click \"Add to wishlist\".",
+    },
+    {
+      "question": "Are there discounts on books?",
+      "answer":
+          "Some books may have discounts. Check the book details to see if a discount is active.",
+    },
+    {
+      "question": "Is my personal data safe?",
+      "answer":
+          "Yes, we follow strict security protocols to protect your data and never share it with third parties.",
+    },
+    {
+      "question": "Can I share books with friends?",
+      "answer":
+          "No, books are for personal use only and sharing is not allowed due to copyright rules.",
+    },
+    {
+      "question": "How can I rate a book?",
+      "answer":
+          "Open the book details page and scroll down to the rating section to give your feedback.",
     },
   ];
 

@@ -571,7 +571,7 @@ class _EditBookScreenState extends State<EditBookScreen> {
       } catch (_) {
         setState(() {
           _fieldErrors = {
-            "general": ["An error occurred. Please try again."],
+            "general": ["An error occurred. Please try again"],
           };
         });
       }

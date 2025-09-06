@@ -4,8 +4,8 @@ namespace eBooks.Interfaces
 {
     public interface IRecommenderService
     {
-        Task TrainModel(int numberOfIterations, int approximationRank, float alpha, float lambda, int batchIterations = 10, int patience = 3);
+        Task TrainModel(int maxIterations = 200, int approximationRank = 150, float alpha = 0.02f, float lambda = 0.04f, int batchIterations = 10, int patience = 3);
         Task LoadModel();
-        Task<List<BooksRes>> GetRecommendedBooks(int bookId, int numberOfRecommendations);
+        Task<List<BooksRes>> GetRecommendedBooks(int bookId, int numberOfRecommendations = 5);
     }
 }
