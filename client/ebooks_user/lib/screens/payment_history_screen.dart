@@ -82,7 +82,6 @@ class _PaymentHistoryScreenState extends State<PaymentHistoryScreen> {
         }
       });
 
-      // Provjera ako lista nije dovoljno duga da popuni ekran
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (!mounted) return;
         if (!_scrollController.hasClients) return;

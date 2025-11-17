@@ -83,8 +83,8 @@ namespace eBooks.API.Controllers
         }
 
         [Authorize(Policy = "User")]
-        [HttpPatch("{id}/verify-email/{token?}")]
-        public async Task<UsersRes> VerifyEmail(int id, string? token = null)
+        [HttpPatch("{id}/verify-email")]
+        public async Task<UsersRes> VerifyEmail(int id, [FromQuery] string? token = null)
         {
             await _accessControlHandler.CheckIsOwnerByUserId(id);
             return await _service.VerifyEmail(id, token);

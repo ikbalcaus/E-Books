@@ -34,7 +34,7 @@ namespace eBooks.API.Controllers
 
         [Authorize(Policy = "User")]
         [HttpGet("{publisherId}/payment-history")]
-        public async Task<PagedResult<PurchasesRes>> GetAllByPublisherId(int publisherId, BaseSearch search)
+        public async Task<PagedResult<PurchasesRes>> GetAllByPublisherId(int publisherId, [FromQuery] BaseSearch search)
         {
             return await _service.GetAllByPublisherId(publisherId, search);
         }

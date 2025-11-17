@@ -26,7 +26,6 @@ CREATE TABLE Users (
     TokenExpiry DATETIME,
     DeletionReason NVARCHAR(255),
     StripeAccountId NVARCHAR(100),
-    PaypalMerchantId NVARCHAR(100),
     RoleId INT NOT NULL,
     PublisherVerifiedById INT,
     FOREIGN KEY (RoleId) REFERENCES Roles(RoleId),
